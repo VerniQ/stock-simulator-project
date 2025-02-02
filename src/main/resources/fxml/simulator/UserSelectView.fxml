@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      styleClass="background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER"
+      fx:controller="me.verni.view.controler.simulator.UserSelectController">
+    <children>
+        <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="userTableView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0"
+                           prefWidth="500.0"
+                           stylesheets="@../../styles.css" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="userName" minWidth="150.0" prefWidth="250.0" text="Nazwa"/>
+                        <TableColumn fx:id="UserBalance" minWidth="150.0" prefWidth="250.0" text="Saldo"/>
+                    </columns>
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </VBox.margin>
+                </TableView>
+            </children>
+        </VBox>
+        <Button mnemonicParsing="false" styleClass="interactive-button" onAction="#handleNext" prefWidth="200.0" text="Dalej"
+                VBox.vgrow="NEVER" alignment="CENTER">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#handleBack" styleClass="interactive-button" prefWidth="200.0" text="Powrót"
+                VBox.vgrow="NEVER" alignment="CENTER">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>

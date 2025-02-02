@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="me.verni.view.controler.simulator.UserProfileController"
+      alignment="CENTER" spacing="20" prefHeight="400.0" prefWidth="600.0"
+      styleClass="background">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <Button mnemonicParsing="false" styleClass="interactive-button" prefWidth="200.0" text="Twoje Konto"
+                onAction="#handleAccount"/>
+        <Button mnemonicParsing="false" styleClass="interactive-button" prefWidth="200.0" text="Twoje Akcje"
+                onAction="#handleStocks"/>
+        <Button mnemonicParsing="false" styleClass="interactive-button" prefWidth="200.0" text="Giełda"
+                onAction="#handleMarket"/>
+        <Button mnemonicParsing="false" styleClass="interactive-button" prefWidth="200.0" text="Wyjdź do menu"
+                onAction="#handleBack"/>
+    </children>
+</VBox>

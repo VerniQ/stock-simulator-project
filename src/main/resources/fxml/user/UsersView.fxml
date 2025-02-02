@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="me.verni.view.controler.user.UserManagementController"
+      styleClass="background" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <TableView fx:id="userTableView"  HBox.hgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Imię" prefWidth="200"/>
+            <TableColumn fx:id="balanceColumn" text="Saldo" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+
+    <VBox spacing="15" alignment="CENTER" prefWidth="300" HBox.hgrow="NEVER">
+
+        <Button text="Dodaj użytkownika" onAction="#handleAddUser" styleClass="interactive-button" prefWidth="200"/>
+
+        <Button text="Usuń użytkownika" onAction="#handleDeleteUser" styleClass="interactive-button" prefWidth="200"/>
+
+        <Button text="Powrót" onAction="#handleBack" styleClass="interactive-button" prefWidth="200"/>
+    </VBox>
+</HBox>

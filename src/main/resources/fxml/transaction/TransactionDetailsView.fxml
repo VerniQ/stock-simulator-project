@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="me.verni.view.controler.transcation.TransactionDetailsController"
+      spacing="15" alignment="CENTER" styleClass="background">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Szczegóły transakcji" styleClass="label"/>
+
+    <Label text="ID:" styleClass="label"/>
+    <Label fx:id="idLabel" styleClass="text"/>
+
+    <Label text="Użytkownik:" styleClass="label"/>
+    <Label fx:id="userLabel" styleClass="text"/>
+
+    <Label text="Akcja:" styleClass="label"/>
+    <Label fx:id="stockLabel" styleClass="text"/>
+
+
+    <Label text="Ilość:" styleClass="label"/>
+    <Label fx:id="quantityLabel" styleClass="text"/>
+
+    <Label text="Cena:" styleClass="label"/>
+    <Label fx:id="priceLabel" styleClass="text"/>
+
+    <Label text="Data:" styleClass="label"/>
+    <Label fx:id="dateLabel" styleClass="text"/>
+</VBox>

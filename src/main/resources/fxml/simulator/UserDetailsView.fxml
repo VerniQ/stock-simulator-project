@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="me.verni.view.controler.simulator.UserDetailsController"
+      alignment="CENTER" spacing="20" prefHeight="400.0" prefWidth="600.0"
+      styleClass="background">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <Label styleClass="title-label" text="Szczegóły Użytkownika"/>
+        <VBox spacing="5" alignment="CENTER" styleClass="data-section">
+            <children>
+                <Label styleClass="user-details-label" text="Nazwa użytkownika:"/>
+                <Label fx:id="userNameLabel" styleClass="text" text="User Name"/>
+            </children>
+        </VBox>
+        <VBox spacing="5" alignment="CENTER" styleClass="data-section">
+            <children>
+                <Label styleClass="user-details-label" text="Saldo:"/>
+                <Label fx:id="balanceLabel" styleClass="text" text="Saldo"/>
+            </children>
+        </VBox>
+        <VBox spacing="5" alignment="CENTER" styleClass="data-section">
+            <children>
+                <Label styleClass="user-details-label" text="ID:"/>
+                <Label fx:id="idLabel" styleClass="text" text="ID"/>
+            </children>
+        </VBox>
+        <Button mnemonicParsing="false" styleClass="interactive-button" prefWidth="200.0" text="Powrót"
+                onAction="#handleBack">
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>

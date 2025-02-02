@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="me.verni.view.controler.stock.AddStockController"
+      spacing="20" alignment="CENTER" styleClass="background" >
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+    <Label text="Dodaj nową akcję" styleClass="label" style="-fx-font-size: 24px; -fx-text-fill: #2E86C1; -fx-font-weight: bold; -fx-padding: 0 0 20 0; -fx-alignment: center"/>
+    <HBox spacing="15" alignment="CENTER">
+        <Label text="Nazwa:" styleClass="label" style="-fx-min-width: 80px; -fx-text-fill: #2C3E50;"/>
+        <TextField fx:id="nameField" promptText="Nazwa akcji" styleClass="text-field" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Label text="Symbol:" styleClass="label" style="-fx-min-width: 80px; -fx-text-fill: #2C3E50;"/>
+        <TextField fx:id="symbolField" promptText="Symbol akcji" styleClass="text-field"  prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Label text="Cena:" styleClass="label" style="-fx-min-width: 80px; -fx-text-fill: #2C3E50;"/>
+        <TextField fx:id="priceField" promptText="Cena akcji" styleClass="text-field" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER" style="-fx-padding: 20 0 0 0;">
+        <Button text="Dodaj" onAction="#handleAddStock" styleClass="interactive-button" prefWidth="140"/>
+        <Button text="Anuluj" onAction="#handleCancel" styleClass="interactive-button" prefWidth="140"/>
+    </HBox>
+</VBox>

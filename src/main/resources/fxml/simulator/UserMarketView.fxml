@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="me.verni.view.controler.simulator.UserMarketController"
+      spacing="20" styleClass="background" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <VBox spacing="15" alignment="CENTER">
+        <TableView fx:id="stocksTableView" prefWidth="650" prefHeight="400">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="200.0" text="Nazwa akcji" />
+                <TableColumn fx:id="symbolColumn" prefWidth="100.0" text="Symbol" />
+                <TableColumn fx:id="priceColumn" prefWidth="100.0" text="Cena" />
+                <TableColumn fx:id="changePercentColumn" prefWidth="150.0" text="Zmiana w %" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <VBox spacing="15" alignment="CENTER" prefWidth="300">
+        <Button text="Kup akcję" onAction="#handleBuy" styleClass="interactive-button" prefWidth="200"/>
+        <Button text="Powrót" onAction="#handleBack" styleClass="interactive-button" prefWidth="200"/>
+    </VBox>
+</HBox>
